@@ -1,0 +1,92 @@
+// app global css in SCSS form
+// app global css in Sass form
+/* +-------------------------------------+ */
+/* | Import Nunito Sans font from google | */
+/* +-------------------------------------+ */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+// !!! Set global font to Sentient.io's branding font - Nunito Sans
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+
+html, p {
+  font-size: 18px !important;
+}
+
+.s-small-text span {
+  font-size: 14px !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  font-weight: 800;
+}
+
+// hidden body overflow for a full screen app
+body {
+    overflow: hidden;
+}
+
+.s-rounded-borders-left {
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+.s-rounded-borders {
+  border-radius: 12px;
+}
+//
+.s-floating-card {
+  background-color: $s-white-transparient;
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  min-width: 260px;
+  min-height: 240px;
+  margin: 2rem;
+  box-shadow: 2px 2px 6px 0px $s-black-fade;
+}
+.s-header {
+  background-color: $s-navy;
+}
+
+.bg-navy {
+  background: $s-navy;
+  background-color: $s-navy !important;
+}
+
+.bg-purple {
+  background-color: $s-purple;
+}
+
+.bg-blue-grey {
+  background-color: $s-blue-grey;
+}
+
+.bg-base {
+  background-color: $s-base;
+}
+
+.font-navy {
+  color: $s-navy;
+}
+@media (min-width: 600px) {
+  .q-dialog__inner--minimized > div {
+    max-width: 90vw;
+  }
+}
